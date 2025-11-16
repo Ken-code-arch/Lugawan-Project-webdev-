@@ -47,18 +47,6 @@ header {
     transition: all 0.3s ease;
 }
 
-.hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(10px, 10px);
-}
-
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
-}
-
 nav ul {
     list-style: none;
     margin: 0;
@@ -72,7 +60,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #4a2c0f; /* Dark brown link text */
+    color: #4a2c0f;
     font-weight: bold;
 }
 
@@ -80,7 +68,8 @@ main {
     padding: 20px;
 }
 
-/* Home Page Styles */
+/* -------------------- HOME -------------------- */
+
 .home-main {
     display: flex;
     flex-direction: column;
@@ -102,7 +91,7 @@ main {
 
 .main-special-image {
     grid-area: main-image;
-    background-color:saddlebrown; /* Example background */
+    background-color: saddlebrown;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -126,12 +115,11 @@ main {
     align-items: center;
     font-size: 3em;
     font-family: 'Courier New', Courier, monospace;
-    
 }
 
 .special-description {
     grid-area: description;
-    background-color: #8B4513; /* SaddleBrown */
+    background-color: #8B4513;
     color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -145,7 +133,7 @@ main {
 }
 
 .special-item {
-    background-color: #8B4513; /* SaddleBrown */
+    background-color: #8B4513;
     padding: 10px;
     border-radius: 8px;
     text-align: center;
@@ -153,7 +141,7 @@ main {
 }
 
 .special-item img {
-    width: 80px; /* Adjust thumbnail size */
+    width: 80px;
     height: 80px;
     object-fit: cover;
     border-radius: 5px;
@@ -162,18 +150,17 @@ main {
 
 .order-now-button {
     grid-area: order-button;
-    background-color: #4a6741; /* Darker green */
+    background-color: #4a6741;
     color: #fff;
     border: none;
     padding: 15px 30px;
     border-radius: 8px;
     cursor: pointer;
     font-size: 1.2em;
-    align-self: end; /* Align to the bottom of its grid area */
-    justify-self: end; /* Align to the right of its grid area */
 }
 
-/* Menu Page Styles */
+/* -------------------- MENU -------------------- */
+
 .menu-main {
     display: flex;
     justify-content: center;
@@ -188,7 +175,7 @@ main {
 }
 
 .menu-item {
-    background-color: #8B4513; /* SaddleBrown */
+    background-color: #8B4513;
     color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -215,25 +202,17 @@ main {
     margin-bottom: 5px;
 }
 
-.add-to-cart  {
-    background-color: #4a6741; /* Darker green */
+.add-to-cart {
+    background-color: #4a6741;
     color: #fff;
     border: none;
     padding: 15px 30px;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 1.2em;
-    align-self: end;
-    justify-self: end;
 }
 
-.add-to-cart img {
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
-}
+/* -------------------- ABOUT -------------------- */
 
-/* About Us Page Styles */
 .about-main {
     display: flex;
     justify-content: center;
@@ -245,14 +224,10 @@ main {
     gap: 30px;
     width: 100%;
     max-width: 1200px;
-    background-color: #8B4513; /* SaddleBrown */
+    background-color: #8B4513;
     color: #fff;
     padding: 30px;
     border-radius: 8px;
-}
-
-.about-logo {
-    text-align: center;
 }
 
 .about-logo img {
@@ -261,18 +236,8 @@ main {
     border-radius: 8px;
 }
 
-.about-text-box h2 {
-    margin-top: 0;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
+/* -------------------- GALLERY -------------------- */
 
-.about-text-box p {
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-/* Gallery Page Styles */
 .gallery-main {
     display: flex;
     justify-content: center;
@@ -287,39 +252,20 @@ main {
 }
 
 .gallery-item {
-    background-color: #8B4513; /* SaddleBrown */
+    background-color: #8B4513;
     padding: 10px;
     border-radius: 8px;
 }
 
 .gallery-item img {
     width: 100%;
-    height: 300px; /* Uniform height for gallery images */
+    height: 300px;
     object-fit: cover;
-    display: block;
     border-radius: 5px;
 }
 
-.gallery-item.large {
-    grid-column: span 1; /* Adjust if you want it to span two columns */
-}
+/* -------------------- CONTACT -------------------- */
 
-.add-photo-box {
-    background-color: #4a6741; /* Darker green */
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-
-/* Contact Us Page Styles */
 .contact-main {
     display: flex;
     flex-direction: column;
@@ -332,396 +278,56 @@ main {
     gap: 20px;
     width: 100%;
     max-width: 1000px;
-    margin-bottom: 30px;
 }
 
-.info-box {
-    background-color: #8B4513; 
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-}
+/* ------------------------------------------------------------------ */
+/* ---------------------- RESPONSIVE NAVIGATION ---------------------- */
+/* ------------------------------------------------------------------ */
 
-.info-box h2 {
-    margin-top: 0;
-    font-size: 1.5em;
-    margin-bottom: 15px;
-}
-
-.info-box p {
-    margin-bottom: 10px;
-}
-
-.footer-contact-details {
-    background-color: #e6b800; 
-    color: #4a2c0f; 
-    padding: 15px 20px;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 1000px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.footer-contact-details p {
-    margin: 5px 0;
-}
-
-/* Responsive Design */
-
-/* Tablets & small laptops (768px - 1024px) */
-@media (max-width: 1024px) {
-    header {
-        flex-direction: column;
-        gap: 12px;
-        text-align: center;
-    }
-    
-    .logo h1 {
-        font-size: 1.1rem;
-    }
-    
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-    
-    .special-section {
-        grid-template-areas:
-            "main-image"
-            "special-title"
-            "description"
-            "special-items"
-            "order-button";
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-    
-    .menu-items-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .special-items {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
-    }
-    
-    .our-special-title {
-        font-size: 2rem;
-    }
-    
-    .photo-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .contact-info-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .about-content {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Mobile devices (480px - 768px) */
+/* Tablets & Phones */
 @media (max-width: 768px) {
+
+    /* Show hamburger */
     .hamburger {
         display: flex;
     }
-    
-    nav {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: #e6b800;
-        width: 100%;
-        text-align: center;
-        transition: left 0.3s ease;
-        z-index: 10;
-        padding: 20px 0;
-    }
-    
-    nav.active {
-        left: 0;
-    }
-    
+
+    /* Hide desktop navigation */
     nav ul {
-        flex-direction: column;
-        gap: 0;
+        display: none;
     }
-    
+
+    /* MOBILE MENU DROPDOWN (always visible) */
+    nav {
+        position: relative;
+        width: 100%;
+        background-color: #e6b800;
+        padding: 10px 0;
+    }
+
+    /* Show nav items stacked */
+    nav ul {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
     nav ul li {
         margin: 0;
-        padding: 12px 0;
-        border-bottom: 1px solid rgba(74,44,15,0.1);
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
     }
-    
+
     nav ul li a {
         display: block;
-    }
-    
-    body {
-        font-size: 14px;
-    }
-    
-    header {
-        padding: 10px 12px;
-        flex-direction: row;
-        gap: 8px;
-    }
-    
-    .logo img {
-        height: 40px;
-    }
-    
-    .logo h1 {
-        font-size: 1rem;
-    }
-    
-    main {
-        padding: 12px;
-    }
-    
-    .special-section {
-        grid-template-areas:
-            "main-image"
-            "special-title"
-            "description"
-            "special-items"
-            "order-button";
-        grid-template-columns: 1fr;
-        gap: 12px;
-    }
-    
-    .special-description h2 {
-        font-size: 1rem;
-        line-height: 1.4;
-    }
-    
-    .our-special-title {
-        font-size: 1.5rem;
-        padding: 12px;
-    }
-    
-    .special-items {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-    
-    .special-item img {
-        width: 80px;
-        height: 80px;
-    }
-    
-    .menu-items-grid {
-        grid-template-columns: 1fr;
-        gap: 12px;
-        padding: 0 8px;
-    }
-    
-    .menu-item {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-    }
-    
-    .menu-item img {
         width: 100%;
-        height: 150px;
-    }
-    
-    .order-now-button {
-        padding: 10px 16px;
-        font-size: 0.95rem;
-        width: 100%;
-    }
-    
-    .add-to-cart {
-        padding: 10px;
-        font-size: 1rem;
-        width: 100%;
-    }
-    
-    .photo-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .gallery-item img {
-        height: 200px;
-    }
-    
-    .contact-info-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .about-content {
-        grid-template-columns: 1fr;
-        padding: 20px;
     }
 }
 
-/* Small mobile devices (below 480px) */
+/* Small phones */
 @media (max-width: 480px) {
-    .hamburger {
-        display: flex;
-    }
-    
-    nav {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: #e6b800;
-        width: 100%;
-        text-align: center;
-        transition: left 0.3s ease;
-        z-index: 10;
-        padding: 20px 0;
-    }
-    
-    nav.active {
-        left: 0;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        gap: 0;
-    }
-    
-    nav ul li {
-        margin: 0;
-        padding: 12px 0;
-        border-bottom: 1px solid rgba(74,44,15,0.1);
-    }
-    
-    nav ul li a {
-        display: block;
-    }
-    
-    body {
-        font-size: 13px;
-    }
-    
-    header {
-        padding: 8px 10px;
-        gap: 8px;
-    }
-    
     .logo img {
         height: 35px;
-        margin-right: 6px;
-    }
-    
-    .logo h1 {
-        font-size: 0.9rem;
-    }
-    
-    main {
-        padding: 10px;
-    }
-    
-    .special-section {
-        gap: 10px;
-    }
-    
-    .special-description h2 {
-        font-size: 0.9rem;
-        padding: 10px;
-    }
-    
-    .our-special-title {
-        font-size: 1.2rem;
-        padding: 10px;
-    }
-    
-    .special-items {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
-    }
-    
-    .special-item {
-        padding: 8px;
-    }
-    
-    .special-item img {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .special-item p {
-        font-size: 0.85rem;
-    }
-    
-    .menu-item {
-        flex-direction: column;
-        gap: 8px;
-        padding: 8px;
-    }
-    
-    .menu-item img {
-        width: 100%;
-        height: 120px;
-    }
-    
-    .menu-item .price {
-        font-size: 1.1em;
-    }
-    
-    .menu-item h3 {
-        font-size: 0.95rem;
-    }
-    
-    .order-now-button {
-        padding: 8px 12px;
-        font-size: 0.9rem;
-        width: 100%;
-    }
-    
-    .add-to-cart {
-        padding: 8px;
-        font-size: 0.95rem;
-        width: 100%;
-    }
-    
-    .photo-grid {
-        grid-template-columns: 1fr;
-        gap: 12px;
-    }
-    
-    .gallery-item img {
-        height: 150px;
-    }
-    
-    .contact-info-grid {
-        grid-template-columns: 1fr;
-        gap: 12px;
-    }
-    
-    .info-box {
-        padding: 15px;
-    }
-    
-    .info-box h2 {
-        font-size: 1.2em;
-    }
-    
-    .about-content {
-        grid-template-columns: 1fr;
-        padding: 15px;
-        gap: 15px;
-    }
-    
-    .about-text-box h2 {
-        font-size: 1.3em;
     }
 }
 
-/* Reduce motion for accessibility */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        transition: none !important;
-        animation: none !important;
-    }
-}
