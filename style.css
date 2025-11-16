@@ -85,7 +85,7 @@ main {
 
 .our-special-title {
     grid-area: special-title;
-    background-image: url(pics/food\ bg.jpg);
+    background-image: url(food\ bg.jpg);
     color: beige;
     padding: 15px;
     border-radius: 8px;
