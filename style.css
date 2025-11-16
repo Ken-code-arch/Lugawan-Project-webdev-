@@ -28,6 +28,37 @@ header {
     color: #4a2c0f; /* Dark brown text */
 }
 
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 5px;
+    padding: 8px;
+}
+
+.hamburger span {
+    width: 24px;
+    height: 3px;
+    background-color: #4a2c0f;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
 nav ul {
     list-style: none;
     margin: 0;
@@ -395,13 +426,49 @@ main {
 
 /* Mobile devices (480px - 768px) */
 @media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    nav {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: #e6b800;
+        width: 100%;
+        text-align: center;
+        transition: left 0.3s ease;
+        z-index: 10;
+        padding: 20px 0;
+    }
+    
+    nav.active {
+        left: 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    nav ul li {
+        margin: 0;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(74,44,15,0.1);
+    }
+    
+    nav ul li a {
+        display: block;
+    }
+    
     body {
         font-size: 14px;
     }
     
     header {
         padding: 10px 12px;
-        flex-direction: column;
+        flex-direction: row;
         gap: 8px;
     }
     
@@ -411,22 +478,6 @@ main {
     
     .logo h1 {
         font-size: 1rem;
-    }
-    
-    nav ul {
-        gap: 8px;
-        font-size: 0.9rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    nav ul li {
-        margin-left: 0;
-    }
-    
-    nav ul li a {
-        padding: 4px 8px;
-        font-size: 0.85rem;
     }
     
     main {
@@ -513,6 +564,42 @@ main {
 
 /* Small mobile devices (below 480px) */
 @media (max-width: 480px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    nav {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: #e6b800;
+        width: 100%;
+        text-align: center;
+        transition: left 0.3s ease;
+        z-index: 10;
+        padding: 20px 0;
+    }
+    
+    nav.active {
+        left: 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    nav ul li {
+        margin: 0;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(74,44,15,0.1);
+    }
+    
+    nav ul li a {
+        display: block;
+    }
+    
     body {
         font-size: 13px;
     }
@@ -529,20 +616,6 @@ main {
     
     .logo h1 {
         font-size: 0.9rem;
-    }
-    
-    nav ul {
-        gap: 6px;
-        font-size: 0.8rem;
-    }
-    
-    nav ul li {
-        margin-left: 0;
-    }
-    
-    nav ul li a {
-        padding: 3px 6px;
-        font-size: 0.75rem;
     }
     
     main {
@@ -652,6 +725,3 @@ main {
         animation: none !important;
     }
 }
-
-
-
