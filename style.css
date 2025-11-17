@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #bad3e1; /* Light blue background */
+    background-color: #bad3e1;
     color: #333;
 }
 
 header {
-    background-color: #e6b800; /* Yellow header */
+    background-color: #e6b800;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -19,16 +19,15 @@ header {
 }
 
 .logo img {
-    height: 50px; /* Adjust as needed */
+    height: 50px;
     margin-right: 10px;
 }
 
 .logo h1 {
     margin: 0;
-    color: #4a2c0f; /* Dark brown text */
+    color: #4a2c0f;
 }
 
-/* Hamburger Menu */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -280,24 +279,16 @@ main {
     max-width: 1000px;
 }
 
-/* ------------------------------------------------------------------ */
-/* ---------------------- RESPONSIVE NAVIGATION ---------------------- */
-/* ------------------------------------------------------------------ */
-
-/* Tablets & Phones */
 @media (max-width: 768px) {
 
-    /* Show hamburger */
     .hamburger {
         display: flex;
     }
 
-    /* Hide desktop navigation */
     nav ul {
         display: none;
     }
 
-    /* MOBILE MENU DROPDOWN (always visible) */
     nav {
         position: relative;
         width: 100%;
@@ -305,7 +296,6 @@ main {
         padding: 10px 0;
     }
 
-    /* Show nav items stacked */
     nav ul {
         display: block;
         text-align: center;
@@ -324,10 +314,8 @@ main {
     }
 }
 
-/* Small phones */
 @media (max-width: 480px) {
     .logo img {
         height: 35px;
     }
 }
-
