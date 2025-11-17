@@ -67,8 +67,6 @@ main {
     padding: 20px;
 }
 
-/* -------------------- HOME -------------------- */
-
 .home-main {
     display: flex;
     flex-direction: column;
@@ -158,8 +156,6 @@ main {
     font-size: 1.2em;
 }
 
-/* -------------------- MENU -------------------- */
-
 .menu-main {
     display: flex;
     justify-content: center;
@@ -210,8 +206,6 @@ main {
     cursor: pointer;
 }
 
-/* -------------------- ABOUT -------------------- */
-
 .about-main {
     display: flex;
     justify-content: center;
@@ -234,8 +228,6 @@ main {
     height: auto;
     border-radius: 8px;
 }
-
-/* -------------------- GALLERY -------------------- */
 
 .gallery-main {
     display: flex;
@@ -263,8 +255,6 @@ main {
     border-radius: 5px;
 }
 
-/* -------------------- CONTACT -------------------- */
-
 .contact-main {
     display: flex;
     flex-direction: column;
@@ -279,8 +269,38 @@ main {
     max-width: 1000px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .special-section {
+        grid-template-areas:
+            "special-title special-title"
+            "main-image main-image"
+            "description description"
+            "special-items special-items"
+            "order-button order-button";
+        grid-template-columns: 1fr;
+    }
+    
+    .our-special-title {
+        font-size: 2.5em;
+    }
 
+    .menu-items-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+    
+    .photo-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+    
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
     .hamburger {
         display: flex;
     }
@@ -293,7 +313,6 @@ main {
         position: relative;
         width: 100%;
         background-color: #e6b800;
-        padding: 10px 0;
     }
 
     nav ul {
@@ -312,10 +331,52 @@ main {
         display: block;
         width: 100%;
     }
+    
+    .special-section {
+        grid-template-areas:
+            "special-title"
+            "main-image"
+            "description"
+            "special-items"
+            "order-button";
+        grid-template-columns: 1fr;
+    }
+    
+    .our-special-title {
+        font-size: 2em;
+    }
+    
+    .special-items {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .order-now-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
     .logo img {
         height: 35px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    .menu-item img {
+        width: 80px;
+        height: 80px;
     }
 }
